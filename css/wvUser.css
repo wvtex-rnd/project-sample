@@ -84,6 +84,10 @@ pre {
     display: flex;
 }
 
+.data-sourc a {
+    text-decoration: none;
+}
+
 .data-sourc ul li {
     text-align: center;
     font-size: 15px;
