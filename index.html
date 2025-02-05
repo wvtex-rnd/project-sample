@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/wvFont.css" />
+    <link rel="stylesheet" href="./css/wvCommon.css" />
+    <link rel="stylesheet" href="./css/wvUser.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="./js/wvScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+
+            <div class="data-sourc">
+                <div class="data-sourc-title">
+                    Data Source
+                    <span class="tag">KR</span>
+                </div>
+
+                <ul>
+                    <li style="color: #A50F0F;">KR</li>
+                    <li>JP</li>
+                    <li>ID</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrap type1">
+            <h2>
+                <span style="color: #0163D5;">Welcome,</span>
+                Taejong Kim
+            </h2>
+
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Skills</h3>
+
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <img src="./images/ic-medal.svg" alt="">
+                    My Skills
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample1')"
+                        style="margin-left: 10px;">+ Add</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <button type="button" class="round-btn select"><img src="./images/ic-medal.svg" alt="">Java <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Application Programming
+                    Interface (API) <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Databases <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">JavaScript (JS) <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Python <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Problem Solving <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Software Development
+                    <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">RESTful APIs <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">SQL <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn">+ More</button>
+            </div>
+
+            <div style="margin-top: 85px; display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Occupations</h3>
+
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <img src="./images/ic-medal.svg" alt="">
+                    My Occupations
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample3')"
+                        style="margin-left: 10px;">+ Add</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Systems Software
+                    Developers <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Web Developers<img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Software Application
+                    Developers <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Data Engineers <img
+                        src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Computer Programmers
+                    <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Cloud Implementation
+                    Engineers <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+                <button type="button" class="round-btn"><img src="./images/ic-medal.svg" alt="">Data Scientists
+                    <img src="./images/ic-x.svg" alt="" class="btn-del"></button>
+
+                <button type="button" class="round-btn">+ More</button>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #F2F8FC; padding: 80px 0; margin-top: 80px;">
+        <div class="wrap" style="display: flex;">
+            <div>
+                <h3>
+                    Related Skills
+                </h3>
+                <a href="./index4.html"><img src="./images/graph-1.png" alt=""></a>
+            </div>
+            <div>
+                <h3>
+                    Related Occupations
+                </h3>
+                <a href="./index5.html"><img src="./images/graph-2.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #FAF1F1; padding: 80px 0;">
+        <div class="wrap" style="position: relative;">
+            <h3>Recommend Badges</h3>
+            <div class="swiper" style="position: static; padding: 10px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge1.png" alt=""></a>
+                            <p>IT Specialist - Java</p>
+                            <span>Certiport​</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge2.png" alt=""></a>
+                            <p>Data Science Foundati...</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge3.png" alt=""></a>
+                            <p>IBM Developer Skills</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge6.png" alt=""></a>
+                            <p>Visual Communications</p>
+                            <span>Sophia</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge1.png" alt=""></a>
+                            <p>IT Specialist - Java</p>
+                            <span>Certiport​</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge2.png" alt=""></a>
+                            <p>Data Science Foundati...</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge3.png" alt=""></a>
+                            <p>IBM Developer Skills</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <a href="./index3.html"><img src="./images/badge6.png" alt=""></a>
+                            <p>Visual Communications</p>
+                            <span>Sophia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev" style="left: -10px"></div>
+                <div class="swiper-button-next" style="right: -10px"></div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 80px;">
+        <div class="wrap">
+            <h3>Recommend Jobs</h3>
+
+            <div style="display: flex; gap:20px; justify-content: space-between;">
+                <img src=" ./images/chart1.png" alt="">
+                <img src="./images/chart2-eng.png" alt="">
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; opacity: 0.6;">
+                <ul style="display: flex; font-size: 16px;gap: 10px;margin: 30px 0 15px 0;">
+                    <li style="display: flex; gap: 5px;"><img src="./images/ic-brand-databricks.svg" alt="">Experience
+                    </li>
+                    <li style="display: flex; gap: 5px;"><img src="./images/ic-school.svg" alt="">Education</li>
+                    <li style="display: flex; gap: 5px;"><img src="./images/ic-file-pencil.svg" alt="">Employment</li>
+                    <li style="display: flex; gap: 5px;"><img src="./images/ic-map-pin.svg" alt="">Location</li>
+                </ul>
+            </div>
+
+            <div class="data-lists">
+                <img src="./images/board-lbstyle-1-eng.png" alt="">
+                <img src="./images/board-lbstyle-2-eng.png" alt="">
+                <img src="./images/board-lbstyle-3-eng.png" alt="">
+                <img src="./images/board-lbstyle-4-eng.png" alt="">
+                <img src="./images/board-lbstyle-5-eng.png" alt="">
+            </div>
+
+            <div style="text-align: center;"><button type="button" style="cursor: pointer;" class="btn-more">+
+                    More</button></div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 80px;">
+        <img src="./images/pc-footer.png" alt="" style="width: 100%;">
+    </footer>
+
+    <div id="modal-sample1" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample1')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    Add your skills.​<br />
+                    Based on the added skills, we provide related skills and occupation information.​
+                </p>
+
+                <div class="enter-text">
+                    <button type="button" class="btn-blue-round">
+                        Python <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <input type="text" placeholder="Enter skills here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="closeModal('modal-sample1')"><img src="./images/btn-cancel.png"
+                        alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample1', 'modal-sample2')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample2" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample2')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    We recommend occupations related to the skills you selected previously.​<br />
+                    After choosing the occupations you're interested in, please click the Save button.
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Skills</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        Python
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning
+                    </button>
+                </div>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Suggested Occupation</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        Systems Software Developers
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Software Application Developers
+                    </button>
+                    <button type="button" class="round-btn">
+                        Data Engineers
+                    </button>
+                    <button type="button" class="round-btn">
+                        Data Scientists
+                    </button>
+                    <button type="button" class="round-btn">
+                        Computer Programmers
+                    </button>
+                    <button type="button" class="round-btn">
+                        Web Developers
+                    </button>
+                    <button type="button" class="round-btn">
+                        Cloud Implementation Engineers
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="nextModal('modal-sample2', 'modal-sample1')"><img
+                        src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample2')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample3" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample3')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Occupations
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    Add your occupations.​<br />
+                    Based on the added occupations, we provide related occupation and occupation information.​
+                </p>
+
+                <div class="enter-text">
+                    <button type="button" class="btn-blue-round">
+                        Computer Systems Engineers/Architects
+                    </button>
+                    <input type="text" placeholder="Enter occupation here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">Systems Software Developers</button></li>
+                    <li><button type="button" class="btn-skill">Computer Systems Engineers/Architects</button></li>
+                    <li><button type="button" class="btn-skill">Software Application Developers</button></li>
+                    <li><button type="button" class="btn-skill">Software Quality Assurance Engimeers</button></li>
+                    <li><button type="button" class="btn-skill">Computer Programmers</button></li>
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="closeModal('modal-sample3')"><img src="./images/btn-cancel.png"
+                        alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample3', 'modal-sample4')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample4" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample4')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Occupations
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    We recommend skills related to the occupations you selected previously.​<br />
+                    If there are any skills you want to exclude, use the × button. Once you're done selecting, please
+                    click the Save button.​
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Occupation</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        Computer Systems Engineers/Architects
+                    </button>
+                </div>
+
+                <h4
+                    style="display: flex;align-items: center;justify-content: space-between;font-size: 18px; margin-bottom: 10px;">
+                    Suggested Skills
+                    <button type="button" style="color: #197DB7;" class="deselect-all">Deselect All</button>
+                </h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        Application Programming Interface (API)
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Databases
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Debugging
+                    </button>
+                    <button type="button" class="round-btn select">
+                        JavaScript (JS)
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Problem Solving
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Software Development
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Java
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Python
+                    </button>
+                    <button type="button" class="round-btn select">
+                        RESTful APIs
+                    </button>
+                    <button type="button" class="round-btn select">
+                        SQL
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="nextModal('modal-sample4', 'modal-sample3')"><img
+                        src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample4')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dataToggleBtn = document.querySelector('.data-sourc');
+        dataToggleBtn.addEventListener('click', () => {
+            dataToggleBtn.classList.toggle('on');
+        });
+
+        const delBtns = document.querySelectorAll('.btn-del');
+        delBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.parentNode.remove()
+            });
+        });
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 4.5,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        const inputBoxs = document.querySelectorAll('.enter-skill');
+        inputBoxs.forEach((inputBox) => {
+            inputBox.addEventListener('focus', () => {
+                const skillBox = inputBox.closest('.modal-body').querySelector('.enter-text + .lists');
+                skillBox.style.display = 'block';
+            });
+        });
+
+        const skillBtns = document.querySelectorAll('.round-btn');
+        skillBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('select');
+            });
+        });
+
+        const skillBtns2 = document.querySelectorAll('.type1 .round-btn');
+        skillBtns2.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                skillBtns2.forEach(el => {
+                    el.classList.remove('select');
+                })
+                btn.classList.toggle('select');
+            });
+        });
+
+        const deselectAll = document.querySelector('.deselect-all');
+        deselectAll.addEventListener('click', () => {
+            const skillBtns = deselectAll.closest('.modal-body').querySelectorAll('.enter-btn button');
+            skillBtns.forEach((btn) => {
+                btn.classList.remove('select');
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const modalCloseBtn = document.querySelectorAll(".modal-close-btn");
+            modalCloseBtn.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    btn.closest(".modal").querySelector('.lists').style.display = 'none';
+                });
+            })
+        });
+
+    </script>
+</body>
+
+</html>

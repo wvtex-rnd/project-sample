@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/wvFont.css" />
+    <link rel="stylesheet" href="./css/wvCommon.css" />
+    <link rel="stylesheet" href="./css/wvUser.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="./js/wvScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+
+            <div class="data-sourc">
+                <div class="data-sourc-title">
+                    Data Source
+                    <span class="tag">KR</span>
+                </div>
+
+                <ul>
+                    <li style="color: #A50F0F;">KR</li>
+                    <li>JP</li>
+                    <li>ID</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrap">
+            <h2>
+                <span style="color: #0163D5;">Welcome,</span>
+                World Vertex
+            </h2>
+
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Skills</h3>
+
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <span style="color: #F9A825;">★</span>
+                    Interests
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample1')"
+                        style="margin-left: 10px;">+ Add</button>
+                </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <span class="round-btn"><span class="btn-star active"></span><a href="./index4.html">Java</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Application Programming
+                        Interface (API) </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Databases</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Debugging</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">JavaScript (JS) </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Python</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Problem
+                        Solving </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">Software
+                        Development</a>
+                </span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">RESTful
+                        APIs </a></span>
+                <span class="round-btn"><span class="btn-star"></span><a href="./index4.html">SQL</a>
+                </span>
+
+                <button type="button" class="round-btn">+ More</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section style="background-color: #FAF1F1; padding: 80px 0; margin-top: 80px;">
+        <div class="wrap">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <h3>Recommend Badges</h3>
+                <div style="display: flex; align-items: center; gap: 5px; font-size: 16px;">
+                    <span style="color: #F9A825;">★</span>
+                    Interests
+                    <button type="button" class="btn-line" onclick="openModal('modal-sample5 ')"
+                        style="margin-left: 10px;">Show All</button>
+                    <button type="button" class="btn-blue" onclick="openModal('modal-sample3')">+ Add</button>
+                </div>
+            </div>
+
+            <ul class="badges-lists">
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge1.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>IT Specialist - Java</p>
+                            <span>Certiport​</span>
+                        </div>
+                    </div>
+
+                    <a href='./index3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge2.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Data Science Foundations - Level 1</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+
+                    <a href='./index3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge3.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Web Development with HTML, CSS, JavaScript Essentials</p>
+                            <span>IBM​</span>
+                        </div>
+                    </div>
+
+                    <a href='./index3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge4.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>Unity Creative Core</p>
+                            <span>Unity Technologies</span>
+                        </div>
+                    </div>
+
+                    <a href='./index3.html' class="btn-line">Details</a>
+                </li>
+                <li>
+                    <div class="badge-info"><span class="btn-star"></span>
+                        <img src="./images/badge5.png" alt="" style="width: 60px;">
+                        <div>
+                            <p>IBM Full Stack Software Developer Professional Certificate</p>
+                            <span>IBM</span>
+                        </div>
+                    </div>
+
+                    <a href='./index3.html' class="btn-line">Details</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section style="margin-top: 80px;">
+        <div class="wrap">
+            <h3>Employee Value</h3>
+
+            <div class="tab">
+                <button type="button" class="on">Skills</button>
+                <button type="button">Badges</button>
+            </div>
+
+            <div class="tab-cont" style="display: block;">
+                <p style="color: #6C6F71;">We showcase employee value through the skill profiles of World Vertex
+                    employees.​<br />
+                    This is provided only for the skills you are interested in. If you would like to get recommendations
+                    for talents with these skills, please click the ‘Talent’ button.​</p>
+                <ul class="talent-lists">
+                    <li>
+                        <p>Application Programming Interface (API)</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 25%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">25%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Databases</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 35%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">35%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Debugging</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 18%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">18%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>JavaScript (JS)</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 74%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">74%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Java</p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 62%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">62%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-cont">
+                <p style="color: #6C6F71;">We showcase employee value through the badge profiles of World Vertex
+                    employees.​<br />
+                    This is provided only for the badges you are interested in. If you would like to get recommendations
+                    for talents with these badges, please click the ‘Talent’ button.​​​</p>
+                <ul class="talent-lists">
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-1.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 15%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">15%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-2.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 75%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">75%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-3.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 58%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">58%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-4.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 35%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">35%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p style="display: flex; align-items: center; gap:20px;">
+                            <img src="./images/badges-img-5.png" alt="">
+                            IT Specialist - Java
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <button type="button" class="btn-blue" onclick="openModal('modal-sample6')">Talent</button>
+                            <div class="gauge" style="width: 500px;">
+                                <span class="gauge-bar" style="width: 22%;"><strong
+                                        style="font-size: 13px; font-weight: 500;">22%</strong></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="margin-top: 80px;">
+        <img src="./images/pc-footer.png" alt="" style="width: 100%;">
+    </footer>
+
+    <div id="modal-sample1" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample1')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    Add your interested skills.<br />
+                    Based on the selected skills, we provide employee value assessment and talent recommendation
+                    features.​
+                </p>
+
+                <div class="enter-text">
+                    <button type="button" class="btn-blue-round">
+                        Python <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <input type="text" placeholder="Enter skills here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                    <li><button type="button" class="btn-skill">Artificail Intelligence (AI)</button></li>
+                    <li><button type="button" class="btn-skill">TensorFlow</button></li>
+                    <li><button type="button" class="btn-skill">Pytorch</button></li>
+                    <li><button type="button" class="btn-skill">Machine Learning (ML)</button></li>
+                    <li><button type="button" class="btn-skill">Data Science</button></li>
+                    <li><button type="button" class="btn-skill">Natural language Processing (NLP)</button></li>
+                    <li><button type="button" class="btn-skill">Large language Models (LLMs)</button></li>
+                    <li><button type="button" class="btn-skill">Generative AI</button></li>
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="closeModal('modal-sample1')"><img src="./images/btn-cancel.png"
+                        alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample1', 'modal-sample2')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample2" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample2')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Skills
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    We recommend badges related to the skills you selected previously.<br /> After choosing the badges
+                    you're interested in, please click the Save button.
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Skills</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        Python
+                    </button>
+                    <button type="button" class="btn-blue-round">
+                        Deep Learning
+                    </button>
+                </div>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Suggested Badges</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        <img src="./images/sug-badges1.png" alt="">Data Science Foundations – Level 1
+                    </button>
+                    <button type="button" class="round-btn select">
+                        <img src="./images/sug-badges2.png" alt="">Data Analysis with Python
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges3.png" alt="">Python Essentials
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges4.png" alt="">CKAD: Certified Kubernetes Application Developer
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges5.png" alt="">Data Science Foundations – Level 2
+                    </button>
+                    <button type="button" class="round-btn">
+                        <img src="./images/sug-badges6.png" alt="">Data Analysis Using Python
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="nextModal('modal-sample2', 'modal-sample1')"><img
+                        src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample2')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample3" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample3')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Badges
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    Add your interested badges.​<br />
+                    Based on the selected badges, we provide employee value assessment and talent recommendation
+                    features.​
+                </p>
+
+                <div class="enter-text">
+                    <button type="button" class="btn-blue-round">
+                        IT Specialist - Java <img src="./images/ic-x-w.svg" alt="" class="btn-del">
+                    </button>
+                    <input type="text" placeholder="Enter badges here" class="enter-skill">
+                </div>
+
+                <ul class="lists" style="display: none; border: 1px solid #CACFD2;border-radius: 16px;padding: 20px; overflow: auto;
+                max-height: 300px;">
+                    <li><button type="button" class="btn-skill">IT Specialist - Java
+                        </button></li>
+                    <li><button type="button" class="btn-skill">JAVA - 101 : Java Fundamentals</button></li>
+                    <li><button type="button" class="btn-skill">Corda Certified Developer</button></li>
+                    <li><button type="button" class="btn-skill">Data Science Foundations - Level1</button></li>
+                    <li><button type="button" class="btn-skill">CKAD : Certified Kubemetes Application
+                            Developer</button></li>
+
+                </ul>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="closeModal('modal-sample3')"><img src="./images/btn-cancel.png"
+                        alt=""></button>
+                <button type="button" onclick="nextModal('modal-sample3', 'modal-sample4')"><img
+                        src="./images/btn-next.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample4" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample4')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Badges
+            </div>
+            <div class="modal-body">
+                <p style="color: #6C6F71;">
+                    We recommend skills related to the badges you selected previously.​<br />
+                    If there are any skills you want to exclude, use the × button. Once you're done selecting, please
+                    click the Save button.​
+                </p>
+
+                <h4 style="font-size: 18px; margin-bottom: 10px;">Selected Badge</h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="btn-blue-round">
+                        IT Specialist - Java
+                    </button>
+                </div>
+
+                <h4
+                    style="display: flex;align-items: center;justify-content: space-between;font-size: 18px; margin-bottom: 10px;">
+                    Suggested Skills
+                    <button type="button" style="color: #197DB7;" class="deselect-all">Deselect All</button>
+                </h4>
+
+                <div class="enter-btn">
+                    <button type="button" class="round-btn select">
+                        Application Programming Interface (API)
+                    </button>
+                    <button type="button" class="round-btn select">
+                        Databases
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Debugging
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        JavaScript (JS)
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Problem Solving
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Software Development
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Java
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        Python
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        RESTful APIs
+                    </button>
+                    <button type="button" class="round-btn select ">
+                        SQL
+                    </button>
+                </div>
+            </div>
+            <div class="modal-foot" style="text-align: center;">
+                <button type="button" onclick="nextModal('modal-sample4', 'modal-sample3')"><img
+                        src="./images/btn-back.png" alt=""></button>
+                <button type="button" onclick="closeModal('modal-sample4')"><img src="./images/btn-save.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sample5" class="modal">
+        <div class="modal-box">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample5 ')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Recommend Badges
+            </div>
+            <div class="modal-body">
+                <div style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            ">
+                    <p><strong style="color: #197DB7;">98</strong> cases</p>
+
+                    <div>
+                        <button type="button">By interest</button> |
+                        <button type="button" class="sort-skill">By skills</button> |
+                        <img src="./images/checkbox-list.png" alt="" class="checkbox-list" style="display: none;">
+                        <button type="button">5 per page​</button>
+                    </div>
+                </div>
+
+                <ul class="badges-lists">
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge1.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>IT Specialist - Java</p>
+                                <span>Certiport&ZeroWidthSpace;</span>
+                            </div>
+                        </div>
+
+                        <a href='./index3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge2.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Data Science Foundations - Level 1</p>
+                                <span>IBM</span>
+                            </div>
+                        </div>
+
+                        <a href='./index3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge3.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Web Development with HTML, CSS, JavaScript Essentials</p>
+                                <span>IBM&ZeroWidthSpace;</span>
+                            </div>
+                        </div>
+
+                        <a href='./index3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge4.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>Unity Creative Core</p>
+                                <span>Unity Technologies</span>
+                            </div>
+                        </div>
+
+                        <a href='./index3.html' class="btn-line">Details</a>
+                    </li>
+                    <li>
+                        <div class="badge-info"><span class="btn-star"></span>
+                            <img src="./images/badge5.png" alt="" style="width: 60px;">
+                            <div>
+                                <p>IBM Full Stack Software Developer Professional Certificate</p>
+                                <span>IBM</span>
+                            </div>
+                        </div>
+
+                        <a href='./index3.html' class="btn-line">Details</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="modal-foot"><img src="./images/board-paging.png" alt="" style="width: 100%;"></div>
+
+        </div>
+    </div>
+
+    <div id="modal-sample6" class="modal">
+        <div class="modal-box" style="width: 900px;max-width: 900px;">
+            <button type="button" class="modal-close-btn" onclick="closeModal('modal-sample6 ')">
+                <span class="icon ic-close"></span>
+            </button>
+            <div class="modal-head">
+                Recommend Talent
+            </div>
+            <div class="modal-body">
+                <div style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            ">
+                    <p><strong style="color: #197DB7;">98</strong> cases </p>
+
+                    <div>
+                        <button type="button">Recently added</button> |
+                        <button type="button">Most popular</button> |
+                        <img src="./images/checkboxs-eng.png" alt="" class="checkbox-box" style="display: none;">
+                        <button type="button" class="sort-area">By region</button>
+                    </div>
+                </div>
+
+
+                <!-- <img src="./images/talent-eng.png" alt="" style="width: 100%;"> -->
+                <ul class="talent-list-item">
+                    <li>
+                        <div class="talent-item-head">
+                            <p>Kim</p>
+                            <span>(M, 31)</span>
+                        </div>
+                        <div class="talent-item-body">
+                            <div>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-school-blue.svg" alt="">Computer Engineering, Hanyang
+                                    University​
+                                </p>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-focus.svg" alt="">Gyeonggi, Seoul​</p>
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <div class="skill-wrap"><span>Skills</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Java</span>
+                                        <span class="round-btn" style="pointer-events: none;">Python</span>
+                                        <span class="round-btn" style="pointer-events: none;">Amazon Web Services
+                                            (AWS)</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                                <div class="skill-wrap"><span>Badges</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Data Science Foundations -
+                                            Level 1</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="talent-item-tail">
+                            <button type="button" class="btn-line"><span
+                                    class="btn-star active"></span>Bookmark</button>
+                            <button type="button" class="btn-line">Details</button>
+                            <button type="button" class="btn-line">Contact</button>
+                            <button type="button" class="btn-line">Memo</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talent-item-head">
+                            <p>Kang</p>
+                            <span>(F, 46)</span>
+                        </div>
+                        <div class="talent-item-body">
+                            <div>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-school-blue.svg" alt="">Business Administration, Incheon
+                                    National University​
+                                </p>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-focus.svg" alt="">Seoul, Incheon​​</p>
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <div class="skill-wrap"><span>Skills</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Java</span>
+                                        <span class="round-btn" style="pointer-events: none;">JavaScript (JS)</span>
+                                        <span class="round-btn" style="pointer-events: none;">C</span>
+                                        <span class="round-btn" style="pointer-events: none;">C#</span>
+                                        <span class="round-btn" style="pointer-events: none;">C++</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                                <div class="skill-wrap"><span>Badges</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">IT Specialist -
+                                            Java</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="talent-item-tail">
+                            <button type="button" class="btn-line"><span
+                                    class="btn-star active"></span>Bookmark</button>
+                            <button type="button" class="btn-line">Details</button>
+                            <button type="button" class="btn-line">Contact</button>
+                            <button type="button" class="btn-line">Memo</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talent-item-head">
+                            <p>Jung</p>
+                            <span>(F, 29)</span>
+                        </div>
+                        <div class="talent-item-body">
+                            <div>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-school-blue.svg" alt="">Statistics, Sookmyung Women's
+                                    University​
+                                </p>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-focus.svg" alt="">Seoul​</p>
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <div class="skill-wrap"><span>Skills</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Java</span>
+                                        <span class="round-btn" style="pointer-events: none;">Java Script (JS)</span>
+                                        <span class="round-btn" style="pointer-events: none;">R</span>
+                                        <span class="round-btn" style="pointer-events: none;">Python</span>
+                                        <span class="round-btn" style="pointer-events: none;">SPSS</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                                <div class="skill-wrap"><span>Badges</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Python Essentials</span>
+                                        <span class="round-btn" style="pointer-events: none;">Corda Certified
+                                            Developer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="talent-item-tail">
+                            <button type="button" class="btn-line"><span
+                                    class="btn-star active"></span>Bookmark</button>
+                            <button type="button" class="btn-line">Details</button>
+                            <button type="button" class="btn-line">Contact</button>
+                            <button type="button" class="btn-line">Memo</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talent-item-head">
+                            <p>Lee</p>
+                            <span>(M, 37)</span>
+                        </div>
+                        <div class="talent-item-body">
+                            <div>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-school-blue.svg" alt="">Computer Engineering, Korea
+                                    University​
+                                </p>
+                                <p style="display: flex;align-items: center;gap: 10px;font-size: 16px;"><img
+                                        src="./images/ic-focus.svg" alt="">Daejeon​</p>
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <div class="skill-wrap"><span>Skills</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Java</span>
+                                        <span class="round-btn" style="pointer-events: none;">Python</span>
+                                        <span class="round-btn" style="pointer-events: none;">Amazon Web Services
+                                            (AWS)</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                                <div class="skill-wrap"><span>Badges</span>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                        <span class="round-btn" style="pointer-events: none;">Data Science Foundations -
+                                            Level 1</span>
+                                        <span class="round-btn" style="pointer-events: none;">...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="talent-item-tail">
+                            <button type="button" class="btn-line"><span
+                                    class="btn-star active"></span>Bookmark</button>
+                            <button type="button" class="btn-line">Details</button>
+                            <button type="button" class="btn-line">Contact</button>
+                            <button type="button" class="btn-line">Memo</button>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="modal-foot">
+                <img src="./images/board-paging.png" alt="" style="width: 100%;">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const dataToggleBtn = document.querySelector('.data-sourc');
+        dataToggleBtn.addEventListener('click', () => {
+            dataToggleBtn.classList.toggle('on');
+        });
+
+        const starBtns = document.querySelectorAll('.btn-star');
+        starBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            });
+        });
+
+        const tabBtns = document.querySelectorAll('.tab button');
+        tabBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach((btn) => {
+                    btn.classList.remove('on');
+                });
+                btn.classList.add('on');
+
+                const idx = Array.from(tabBtns).indexOf(btn);
+                const tabConts = document.querySelectorAll('.tab-cont');
+                tabConts.forEach((cont) => {
+                    cont.style.display = 'none';
+                });
+                tabConts[idx].style.display = 'block';
+            });
+        });
+
+        const inputBoxs = document.querySelectorAll('.enter-skill');
+        inputBoxs.forEach((inputBox) => {
+            inputBox.addEventListener('focus', () => {
+                const skillBox = inputBox.closest('.modal-body').querySelector('.enter-text + .lists');
+                skillBox.style.display = 'block';
+            });
+        });
+
+        const skillBtns = document.querySelectorAll('.enter-btn button');
+        skillBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('select');
+            });
+        });
+
+        const deselectAll = document.querySelector('.deselect-all');
+        deselectAll.addEventListener('click', () => {
+            const skillBtns = deselectAll.closest('.modal-body').querySelectorAll('.enter-btn button');
+            skillBtns.forEach((btn) => {
+                btn.classList.remove('select');
+            });
+        });
+
+        const sortSkill = document.querySelector('.sort-skill');
+        const sortSkillCont = document.querySelector('.checkbox-list');
+        sortSkill.addEventListener('click', () => {
+            if (sortSkillCont.style.display === 'none' || sortSkillCont.style.display === '') {
+                sortSkill.classList.add('on');
+                sortSkillCont.style.display = 'block';
+            } else {
+                sortSkill.classList.remove('on');
+                sortSkillCont.style.display = 'none';
+            }
+        });
+
+        const sortArea = document.querySelector('.sort-area');
+        const sortAreaCont = document.querySelector('.checkbox-box');
+        sortArea.addEventListener('click', () => {
+            if (sortAreaCont.style.display === 'none' || sortAreaCont.style.display === '') {
+                sortArea.classList.add('on');
+                sortAreaCont.style.display = 'block';
+            } else {
+                sortArea.classList.remove('on');
+                sortAreaCont.style.display = 'none';
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const modalCloseBtn = document.querySelectorAll(".modal-close-btn");
+            modalCloseBtn.forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    if (btn.closest(".modal").querySelector('.lists')) btn.closest(".modal").querySelector('.lists').style.display = 'none';
+
+                    if (btn.closest(".modal").querySelector('.checkbox-list')) btn.closest(".modal").querySelector('.checkbox-list').style.display = 'none';
+
+                    if (btn.closest(".modal").querySelector('.checkbox-box')) btn.closest(".modal").querySelector('.checkbox-box').style.display = 'none';
+
+
+                });
+            })
+        });
+
+
+    </script>
+</body>
+
+</html>
